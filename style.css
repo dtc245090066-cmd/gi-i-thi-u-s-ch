@@ -1,0 +1,301 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+    --dark: #172b25;
+    --green: #456b54;
+    --cream: #f8f6f0;
+    --muted: #6b746e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--dark);
+    line-height: 1.7;
+}
+
+section, header {
+    scroll-margin-top: 75px;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    letter-spacing: -1px;
+    color: var(--dark);
+}
+
+.navbar-brand span {
+    color: #c18b55;
+}
+
+.nav-link {
+    font-size: 0.94rem;
+    font-weight: 500;
+}
+
+.hero {
+    background: var(--cream);
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.eyebrow {
+    color: var(--green);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+h1, h2, h3, .section-title {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.hero h1 {
+    color: var(--dark);
+    line-height: 1.15;
+}
+
+.hero h1 em {
+    color: var(--green);
+}
+
+.book-cover {
+    width: 75%;
+    max-width: 390px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 22px 24px 0 #e5dfd2;
+    transform: rotate(2deg);
+}
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.section-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.stat-card {
+    background: var(--cream);
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.stat-card h3 {
+    font-size: 2rem;
+    color: var(--green);
+}
+
+.stat-card p {
+    margin-bottom: 0;
+    color: var(--muted);
+}
+
+.author-image {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid var(--cream);
+}
+
+.feature-card {
+    height: 100%;
+    padding: 28px 22px;
+    border: 1px solid #e7e9e4;
+    border-radius: 12px;
+    background: white;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px #172b2510;
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    background: #e8efe8;
+    color: var(--green);
+    border-radius: 12px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.feature-card p,
+.review-card p {
+    color: var(--muted);
+    margin-bottom: 0;
+}
+
+.pricing-section {
+    background: var(--cream);
+}
+
+.price-card {
+    height: 100%;
+    padding: 35px;
+    background: white;
+    border: 1px solid #e3e5df;
+    border-radius: 14px;
+    position: relative;
+}
+
+.price {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 22px 0;
+}
+
+.featured-price {
+    border: 2px solid var(--green);
+}
+
+.popular-label {
+    display: inline-block;
+    background: #e8efe8;
+    color: var(--green);
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.download-box {
+    background: #eef1e9;
+    border-radius: 18px;
+    padding: 65px 25px;
+}
+
+.review-card {
+    height: 100%;
+    padding: 28px;
+    border: 1px solid #e7e9e4;
+    border-radius: 12px;
+    background: white;
+}
+
+.stars {
+    color: #c18b55;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.review-card h6 {
+    margin-top: 22px;
+    margin-bottom: 3px;
+}
+
+.footer {
+    background: var(--dark);
+    color: #d4ded6;
+    padding: 45px 0 25px;
+}
+
+.footer a:not(.navbar-brand) {
+    display: inline-block;
+    color: #d4ded6;
+    text-decoration: none;
+    margin: 0 0 0 18px;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer .navbar-brand {
+    color: white;
+}
+
+/* Responsive cho điện thoại và máy tính bảng */
+@media (max-width: 991.98px) {
+    .hero {
+        padding: 65px 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 7vw, 4rem);
+    }
+
+    .book-cover {
+        width: 65%;
+        height: 350px;
+    }
+
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .navbar-nav {
+        padding: 15px 0;
+        align-items: stretch !important;
+    }
+
+    .navbar-nav .btn {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero {
+        padding: 48px 0;
+    }
+
+    .hero .btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0 0 !important;
+    }
+
+    .book-cover {
+        width: 75%;
+        height: 300px;
+        box-shadow: 12px 14px 0 #e5dfd2;
+    }
+
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    .section-image {
+        height: 280px;
+    }
+
+    .price-card {
+        padding: 25px;
+    }
+
+    .download-box {
+        padding: 45px 20px;
+    }
+
+    .footer a:not(.navbar-brand) {
+        margin: 0 12px 8px 0;
+    }
+}
